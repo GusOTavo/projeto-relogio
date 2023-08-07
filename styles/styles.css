@@ -1,0 +1,77 @@
+@import url('/styles/reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&display=swap');
+
+:root {
+
+    --cor-fundo-relogio1: #ccc;
+    --cor-fundo-relogio2: #EBEBEB;
+
+    --cor-fundo-letreiro: #e66357;
+    --cor-texto-letreiro: white;
+
+    --fonte-primaria: 'Orbitron', sans-serif;
+}
+
+body {
+    background: url("/img/fundo.png");
+    background-size: 50em;
+    background-repeat: repeat;
+}
+
+.main {
+    background-color: var(--cor-fundo-relogio1);
+    width: 400px;
+    height: 175px;
+    margin: 200px auto;
+    position: relative;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+.main-badge {
+    background: var(--cor-fundo-letreiro);
+    color: var(--cor-texto-letreiro);
+    padding: 5px 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 96px;
+    position: absolute;
+    top: -15px;
+    left: 38%;
+    border: 2px solid black;
+}
+
+.main-clock {
+    background-color: var(--cor-fundo-relogio2);
+    text-align: center;
+    font-size: 55px;
+    font-family: var(--fonte-primaria);
+    height: 100%;
+    padding-top: 20px;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width: 500px) {
+    .main {
+        width: 280px;
+        height: 100px;
+        margin: 300px auto;
+        position: relative;
+        padding: 25px;
+    }
+
+    .main-badge {
+        left: 35%;
+        font-weight: normal;
+        text-align: center;
+        padding: 2px 10px;
+    }
+
+    .main-clock {
+        font-size: 2em;
+        padding-top: 3px;
+        height: 1.5em;
+    }
+
+}
