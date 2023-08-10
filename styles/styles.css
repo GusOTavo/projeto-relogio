@@ -51,6 +51,15 @@ body {
     border-radius: 4px;
 }
 
+.rodape {
+    text-align: center;
+    margin: 2em;
+    font-family: var(--fonte-primaria);
+    font-size: 1.75em;
+    color: var(--cor-fundo-relogio1);
+    background-color: var(--cor-texto-letreiro);
+}
+
 
 @media screen and (max-width: 500px) {
     .main {
