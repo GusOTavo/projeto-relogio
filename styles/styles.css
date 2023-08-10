@@ -53,11 +53,13 @@ body {
 
 .rodape {
     text-align: center;
-    margin: 2em;
+    margin-top: 2em;
     font-family: var(--fonte-primaria);
     font-size: 1.75em;
     color: var(--cor-fundo-relogio1);
-    background-color: var(--cor-texto-letreiro);
+    background-color: white;
+    width: 100%;
+    padding: 0.2em;
 }
 
 
